@@ -1,0 +1,49 @@
+/*colors
+primary
+dark blue - #002856
+bright green - #00F2A5
+lightest bright green - #CCFCED
+med bright green - #C1F1E3
+darker bright green - #B0E0D1
+secondary
+light blue - #21E2F5
+yellow - #FFED1A
+base
+med blue - #3D5D77
+light med blue - #708EAC
+light grey - #EDEDEE
+extra color
+orange - #FF7A00*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 5em;
+	font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+	line-height: 1.7;
+}
+
+.basics {
+	color: #4C4C4C;
+	margin-bottom: 2em;
+	border-bottom: 1px solid #4C4C4C;
+}
+
+.basics p, .basics h2, .basics h1, .basics ul{
+	margin-bottom: 1em;
+}
+
+.basics .nospace {
+	margin-bottom: 0;
+}
+
+.basics ul {
+	margin-left: 3em;
+}
+
+.basics a {
+	color: #002856;
+}
