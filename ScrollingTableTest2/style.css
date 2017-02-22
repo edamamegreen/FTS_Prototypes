@@ -65,7 +65,7 @@ h3 {
 }
 
 .btn {
-	font-size: 15px;
+	font-size: 1em;
 	text-align: center;
 	padding: 0.7em 1.25em;
 	line-height: 1.2;
@@ -84,7 +84,7 @@ h3 {
 }
 
 .table-responsive {
-	font-size: 12px;
+	font-size: .75em;
 	width: 100%;
 	overflow-y: scroll;
 	margin-bottom: 17.25px;
