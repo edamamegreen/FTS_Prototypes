@@ -32,6 +32,8 @@
             <li>Hover and clicked color states for links and clickable rows</li>
             <li>A better color for the sorted row that mimics the zebra striping</li>
             <li>New sort icons that are dark when active and light when inactive</li>
+            <li>Added flow date as a column as it seems a natural sort default</li>
+            <li>Rearranged columns so that the columns people might be looking for most are further left (Boundary serves as a category and is easily skimmed over in its current position)</li>    
         </ul>
         <p>Please mouse, scroll around, and resize your browser window. You can compare this prototype with <a href="https://fts.unocha.org/appeals/510/flows">a live appeals page</a> (navigate to the Data tab).</p>
         <p><em>Note: This prototype works well on recent versions of Chrome, Safari, and Firefox. It has not be tested on Internet Explorer.</em></p>
@@ -57,22 +59,23 @@
                     <tr>
                         <th class="views-field views-field-simple-property-3">
                             Boundary </th>
+                        <th class="views-field views-field-directional-property active">
+                            <a href="" title="sort by Flow Date" class="active">Flow Date<img src="sort_icon.png" alt="sort descending" title="sort descending"></a> </th>
                         <th class="views-field views-field-directional-property">
                             <a href="" title="sort by Donor organization" class="active">Donor organization<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
                         <th class="views-field views-field-directional-property-1">
                             <a href="" title="sort by Recipient organization" class="active">Recipient organization<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
-                        <th class="views-field views-field-directional-property-3">
-                            <a href="" title="sort by Project code" class="active">Project code<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
-                        <th class="views-field views-field-simple-property">
-                            Description </th>
-                        <th class="views-field views-field-directional-property-2">
-                            <a href="" title="sort by Sector" class="active">Sector<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
                         <th class="views-field views-field-simple-property-1">
                             <a href="" title="sort by Amount (US$)" class="active dollar">Amount (US$)<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
+                        <th class="views-field views-field-directional-property-2">
+                            <a href="" title="sort by Sector" class="active">Sector<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
+                        <th class="views-field views-field-simple-property">
+                            Description </th>
+                        <th class="views-field views-field-directional-property-3"><a href="" title="sort by Project code" class="active">Project code<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
                         <th class="views-field views-field-simple-property-2">
                             <a href="" title="sort by Funding status" class="active">Funding status<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
-                        <th class="views-field views-field-simple-property-4 active">
-                            <a href="" title="sort by Flow ID" class="active">Flow ID<img src="sort_icon.png" alt="sort descending" title="sort descending"></a> </th>
+                        <th class="views-field views-field-simple-property-4">
+                            <a href="" title="sort by Flow ID" class="active">Flow ID<img src="sort_icon_light.png" alt="sort descending" title="sort descending"></a> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -80,28 +83,31 @@
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Central Emergency Response Fund</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Health Organization</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/H/93209/R/122</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property">
-                            <div><span class="detail-value">El Nino - Strengthening the health response to face drought emergency</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$315,010</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-2">
                             <div><span class="detail-value">Health</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$315,010</span></div>
+                        <td class="views-field views-field-simple-property">
+                            <div><span class="detail-value">El Nino - Strengthening the health response to face drought emergency</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/H/93209/R/122</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Commitment</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">135198</span></div>
                         </td>
                     </tr>
@@ -109,28 +115,31 @@
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Central Emergency Response Fund</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">United Nations Children's Fund</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/WS/93207/R/124</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property">
-                            <div><span class="detail-value">El Nino - Joint Humanitarian response to water, sanitation and hygiene needs in communities affected by the drought</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$300,028</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-2">
                             <div><span class="detail-value">Wash</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$300,028</span></div>
+                        <td class="views-field views-field-simple-property">
+                            <div><span class="detail-value">El Nino - Joint Humanitarian response to water, sanitation and hygiene needs in communities affected by the drought</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/WS/93207/R/124</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">135271</span></div>
                         </td>
                     </tr>
@@ -138,28 +147,31 @@
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Central Emergency Response Fund</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">United Nations Children's Fund</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/H/93208/R/124</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property">
-                            <div><span class="detail-value">El Nino - Emergency Nutrition Response for the treatment and prevention of acute malnutrition in boys and girls under-five in 21 municipalities of the Dry Corridor Area of Honduras</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$107,244</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-2">
                             <div><span class="detail-value">Health</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$107,244</span></div>
+                        <td class="views-field views-field-simple-property">
+                            <div><span class="detail-value">El Nino - Emergency Nutrition Response for the treatment and prevention of acute malnutrition in boys and girls under-five in 21 municipalities of the Dry Corridor Area of Honduras</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/H/93208/R/124</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">135543</span></div>
                         </td>
                     </tr>
@@ -167,28 +179,31 @@
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Central Emergency Response Fund</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93210/R/561</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property">
-                            <div><span class="detail-value">El Nino - Emergency Nutrition Response for the treatment and prevention of acute malnutrition in boys and girls under-five in 21 municipalities of the Dry Corridor Area of Honduras</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$120,244</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-2">
                             <div><span class="detail-value">Food security</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$120,244</span></div>
+                        <td class="views-field views-field-simple-property">
+                            <div><span class="detail-value">El Nino - Emergency Nutrition Response for the treatment and prevention of acute malnutrition in boys and girls under-five in 21 municipalities of the Dry Corridor Area of Honduras</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93210/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">135545</span></div>
                         </td>
                     </tr>
@@ -196,28 +211,31 @@
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Central Emergency Response Fund</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93210/R/561</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property">
-                            <div><span class="detail-value">El Nino - Drought emergency food assistance for food insecure people in the Southern Region of Honduras.</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,345,382</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-2">
                             <div><span class="detail-value">Food security</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,345,382</span></div>
+                        <td class="views-field views-field-simple-property">
+                            <div><span class="detail-value">El Nino - Drought emergency food assistance for food insecure people in the Southern Region of Honduras.</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93210/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">135607</span></div>
                         </td>
                     </tr>
@@ -225,29 +243,32 @@
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Canada, Government of</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,123,596</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-2">
+                            <div><span class="detail-value">Food security</span></div>
                         </td>
                         <td class="views-field views-field-simple-property">
                             <div><span class="detail-value">Restoring Food Security and Livelihoods through Assistance for Vulnerable Groups Affected by Recurrent Shocks in El Salvador, 
 Guatemala, Honduras and Nicaragua</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-2">
-                            <div><span class="detail-value">Food security</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,123,596</span></div>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">140087</span></div>
                         </td>
                     </tr>
@@ -255,29 +276,32 @@ Guatemala, Honduras and Nicaragua</span></div>
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Canada, Government of</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,123,596</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-2">
+                            <div><span class="detail-value">Food security</span></div>
                         </td>
                         <td class="views-field views-field-simple-property">
                             <div><span class="detail-value">Restoring Food Security and Livelihoods through Assistance for Vulnerable Groups Affected by Recurrent Shocks in El Salvador, 
 Guatemala, Honduras and Nicaragua</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-2">
-                            <div><span class="detail-value">Food security</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,123,596</span></div>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">140087</span></div>
                         </td>
                     </tr>
@@ -285,29 +309,32 @@ Guatemala, Honduras and Nicaragua</span></div>
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Canada, Government of</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,123,596</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-2">
+                            <div><span class="detail-value">Food security</span></div>
                         </td>
                         <td class="views-field views-field-simple-property">
                             <div><span class="detail-value">Restoring Food Security and Livelihoods through Assistance for Vulnerable Groups Affected by Recurrent Shocks in El Salvador, 
 Guatemala, Honduras and Nicaragua</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-2">
-                            <div><span class="detail-value">Food security</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,123,596</span></div>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">140087</span></div>
                         </td>
                     </tr>
@@ -315,29 +342,32 @@ Guatemala, Honduras and Nicaragua</span></div>
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Canada, Government of</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,123,596</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-2">
+                            <div><span class="detail-value">Food security</span></div>
                         </td>
                         <td class="views-field views-field-simple-property">
                             <div><span class="detail-value">Restoring Food Security and Livelihoods through Assistance for Vulnerable Groups Affected by Recurrent Shocks in El Salvador, 
 Guatemala, Honduras and Nicaragua</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-2">
-                            <div><span class="detail-value">Food security</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,123,596</span></div>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">140087</span></div>
                         </td>
                     </tr>
@@ -345,29 +375,32 @@ Guatemala, Honduras and Nicaragua</span></div>
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Canada, Government of</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,123,596</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-2">
+                            <div><span class="detail-value">Food security</span></div>
                         </td>
                         <td class="views-field views-field-simple-property">
                             <div><span class="detail-value">Restoring Food Security and Livelihoods through Assistance for Vulnerable Groups Affected by Recurrent Shocks in El Salvador, 
 Guatemala, Honduras and Nicaragua</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-2">
-                            <div><span class="detail-value">Food security</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,123,596</span></div>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">140087</span></div>
                         </td>
                     </tr>
@@ -375,29 +408,32 @@ Guatemala, Honduras and Nicaragua</span></div>
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Canada, Government of</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,123,596</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-2">
+                            <div><span class="detail-value">Food security</span></div>
                         </td>
                         <td class="views-field views-field-simple-property">
                             <div><span class="detail-value">Restoring Food Security and Livelihoods through Assistance for Vulnerable Groups Affected by Recurrent Shocks in El Salvador, 
 Guatemala, Honduras and Nicaragua</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-2">
-                            <div><span class="detail-value">Food security</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,123,596</span></div>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">140087</span></div>
                         </td>
                     </tr> 
@@ -405,29 +441,32 @@ Guatemala, Honduras and Nicaragua</span></div>
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">Canada, Government of</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,123,596</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-2">
+                            <div><span class="detail-value">Food security</span></div>
                         </td>
                         <td class="views-field views-field-simple-property">
                             <div><span class="detail-value">Restoring Food Security and Livelihoods through Assistance for Vulnerable Groups Affected by Recurrent Shocks in El Salvador, 
 Guatemala, Honduras and Nicaragua</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-2">
-                            <div><span class="detail-value">Food security</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,123,596</span></div>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">140087</span></div>
                         </td>
                     </tr>                                                                               
@@ -435,29 +474,32 @@ Guatemala, Honduras and Nicaragua</span></div>
                         <td class="views-field views-field-simple-property-3">
                             <div><span class="detail-value">Incoming</span></div>
                         </td>
+                        <td class="views-field views-field-simple-property-3 active">
+                            <div><span class="detail-value">10/12/2016</span></div>
+                        </td>                        
                         <td class="views-field views-field-directional-property">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
                         <td class="views-field views-field-directional-property-1">
                             <div><span class="detail-value">World Food Programme</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-3">
-                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
+                        <td class="views-field views-field-simple-property-1 dollar">
+                            <div><span class="detail-value">$1,996,226</span></div>
+                        </td>
+                        <td class="views-field views-field-directional-property-2">
+                            <div><span class="detail-value">Food security</span></div>
                         </td>
                         <td class="views-field views-field-simple-property">
                             <div><span class="detail-value">Restoring Food Security and Livelihoods through Assistance for Vulnerable Groups Affected by Recurrent Shocks in El Salvador, 
 Guatemala, Honduras and Nicaragua (Multilateral)</span></div>
                         </td>
-                        <td class="views-field views-field-directional-property-2">
-                            <div><span class="detail-value">Food security</span></div>
-                        </td>
-                        <td class="views-field views-field-simple-property-1 dollar">
-                            <div><span class="detail-value">$1,996,226</span></div>
+                        <td class="views-field views-field-directional-property-3">
+                            <div><span class="detail-value">HND-16/F/93176/R/561</span></div>
                         </td>
                         <td class="views-field views-field-simple-property-2">
                             <div><span class="detail-value">Paid Contribution</span></div>
                         </td>
-                        <td class="views-field views-field-simple-property-4 active">
+                        <td class="views-field views-field-simple-property-4">
                             <div><span class="detail-value">140088</span></div>
                         </td>
                     </tr>

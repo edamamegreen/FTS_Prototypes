@@ -221,7 +221,7 @@ tr:active, tr:nth-child(odd):active {
 }
 
 td.active, th.active {
-	padding: 8px;
+	padding: 8px 8px;
 	/*background-color: #708EAC;*/
 }
 
@@ -230,12 +230,13 @@ than the active*/
 
 td {
 	white-space: nowrap;
-	padding: 8px;
+	padding: 8px 8px;
 	border: 2px solid white;
 }
 
 .dollar {
 	text-align: right;
+	font-variant-numeric: tabular-nums;
 }
 
 /*Making the active column look like its a transparent overlay*/
