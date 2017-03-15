@@ -58,6 +58,51 @@ h3 {
 	margin-top: 0.75em;
 }
 
+
+
+/*----------Tabs-----------*/
+
+.pane-content {
+	color: #0A0532;
+}
+
+.pane-page-switcher .item-list {
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid #ddd;
+	height: 53px;
+}
+
+.pane-page-switcher .item-list li {
+	display: inline-block;
+	float: left;
+	list-style-type: none;
+	margin: 0 0 0 6px;
+}
+
+.pane-page-switcher .item-list a {
+	background-color: #aabbcc;
+	color: #3D5D77;
+	display: inline-block;
+	font-weight: bold;
+	margin: 0;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	width: 100%;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	transition: color 1s;
+}
+
+.pane-page-switcher .item-list a.active {
+	background-color: white;
+	color: #3D5D77;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+/*----------Table Intro-----------*/
+
 .download-modal-link {
 	float: right;
 	position: relative;
@@ -78,6 +123,8 @@ h3 {
 	vertical-align: middle;
 	text-decoration: none;
 }
+
+/*----------Table-----------*/
 
 .view-content {
 
@@ -146,7 +193,19 @@ thead tr {
 	vertical-align: bottom;
 }
 
-th {
+th > a.active {
+    display: block;
+}
+
+a.active {
+	text-decoration: none;
+}
+
+thead > a {
+	display: block;
+}
+
+thead.no-shadows th {
 	padding: 8px;
 	/*line-height: 1.7;*/
 	background-color: #BCBEC0;
@@ -161,12 +220,7 @@ th {
 	padding: 0px;
 	/*transition: color .5s;*/
 	color: #002856;
-	text-decoration: underline;
 	/*background-color: transparent;*/
-}
-
-.active:hover {
-	color: #00A973;
 }
 
 .active:active {
@@ -193,10 +247,6 @@ tr > th:first-child {
 	/*box-shadow: inset 5px 0px 3px 0px #ddd;*/
 }
 
-tbody > tr:last-child > td {
-	border-bottom: 0px;
-}
-
 tbody > tr > td:last-child {
 	border-right: 0px solid white;
 	/*box-shadow: inset 5px 0px 3px 0px #ddd;*/
@@ -206,17 +256,17 @@ tr > th:last-child {
 	border-right: 0px solid white;
 }
 
-tbody tr:nth-child(odd) {
+tbody.no-shadows tr:nth-child(odd) {
 	background-color: #EBEEF1;
 	/*used to be #f7f7f7*/
 	/*D8DEE3 darker tint*/
 	/*EBEEF1 lighter tint*/
 }
 
-tbody tr:nth-child(even) {
+tbody.no-shadows tr:nth-child(even) {
 }
 
-tr:active, tr:nth-child(odd):active {
+tbody.no-shadows tr:active, tr:nth-child(odd):active {
 	background-color: #21E2F5;
 }
 
@@ -228,7 +278,7 @@ td.active, th.active {
 /*#todo need to make the hover more specific
 than the active*/
 
-td {
+tbody.no-shadows td {
 	white-space: nowrap;
 	padding: 8px 8px;
 	border: 2px solid white;
@@ -244,19 +294,19 @@ th.active {
 	background-color: #B0E0D1;
 }
  
-tr:nth-child(odd) td.active {
+tbody.no-shadows tr:nth-child(odd) td.active {
 	background-color: #C1F1E3;
 }
 
-tr:nth-child(even) td.active {
+tbody.no-shadows tr:nth-child(even) td.active {
 	background-color: #CCFCED;
 }
 
-tr:hover, tr:nth-child(odd):hover {
+tbody.no-shadows tr:hover, tbody.no-shadows tr:nth-child(odd):hover {
 	background-color: #B2F5FC;
 }
 
-tr:hover td.active {
+tbody.no-shadows tr:hover td.active {
 	background-color: #B2F5FC;
 }
 
@@ -290,10 +340,74 @@ tr:hover td.active {
 	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
+/*----------Shadowed Table-----------*/
+
+
+
+tbody.shadows tr {
+	background-color: transparent;
+}
+
+tr.shadows > .active{
+	font-weight: bold;
+	letter-spacing: .03em;
+}
+
+tbody.shadows > tr:hover, tbody.shadows > tr:hover > td.active {
+	background-color: #B2F5FC;
+}
+
+tbody.shadows td {
+	white-space: nowrap;
+	padding: 8px 8px;
+}
+
+thead.shadows th {
+	padding: 8px;
+	/*line-height: 1.7;*/
+	background-color: #E5E5E6;
+	border-right: 1px solid white;
+	font-weight: bold;	
+	text-align: left;
+	text-transform: uppercase;
+	font-size: .5em;
+	line-height: 2em;
+	color: #4d4c4d;
+}
+
+thead.shadows th.active {
+	background-color: #BCBEC0;
+}
+
+thead.shadows th, tbody.shadows td {
+	border-bottom: 2px solid #EBEEF1;
+}
+
+tbody.shadows td {
+	border-right: 1px solid #E5E5E6;
+}
+
+.table-responsive.shadows {
+  	overflow-x: auto;
+	min-height: 0.01%;
+	background-image: linear-gradient(to right, white, white), linear-gradient(to left, white, white), linear-gradient(to right, #E5E5E6, white), linear-gradient(to left, #E5E5E6, white);
+	background-attachment: local, local, scroll, scroll;
+	background-position: top left, top right, top left, top right;
+	background-repeat: no-repeat;
+	/*background-color: white;*/
+	background-size: 30px 100%, 30px 100%, 15px 100%, 15px 100%;
+}
+
+
+
+/*----------Footer-----------*/
+
 footer {
 	height: 300px;
 }
 
 /*#todo fixed header for tall tables -- this will need to be done in javascript or something*/
 /*#todo make the scroll bar always visible -- cant keep it always in view for tall tables with just css*/
+
+
 
