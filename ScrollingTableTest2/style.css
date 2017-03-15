@@ -342,11 +342,13 @@ tbody.no-shadows tr:hover td.active {
 
 /*----------Shadowed Table-----------*/
 
-
-
+tbody.shadows tr:nth-child(odd) {
+	background-color: hsla(0, 0%, 90%, .3);
+}
+/*
 tbody.shadows tr {
 	background-color: transparent;
-}
+}*/
 
 tr.shadows > .active{
 	font-weight: bold;
@@ -366,7 +368,7 @@ thead.shadows th {
 	padding: 8px;
 	/*line-height: 1.7;*/
 	background-color: #E5E5E6;
-	border-right: 1px solid white;
+	border-right: 1px solid #BCBEC0;
 	font-weight: bold;	
 	text-align: left;
 	text-transform: uppercase;
@@ -378,7 +380,11 @@ thead.shadows th.active {
 	background-color: #BCBEC0;
 }
 
-thead.shadows th, tbody.shadows td {
+thead.shadows th {
+	border-bottom: 1px solid #BCBEC0;
+}
+
+tbody.shadows td {
 	border-bottom: 2px solid #EBEEF1;
 }
 
@@ -389,7 +395,7 @@ tbody.shadows td {
 .table-responsive.shadows {
   	overflow-x: auto;
 	min-height: 0.01%;
-	background-image: linear-gradient(to right, white, white), linear-gradient(to left, white, white), linear-gradient(to right, #E5E5E6, white), linear-gradient(to left, #E5E5E6, white);
+	background-image: linear-gradient(to right, white, white), linear-gradient(to left, white, white), linear-gradient(to right, hsla(0, 0%, 70%, .4), white), linear-gradient(to left, hsla(0, 0%, 70%, .4), white);
 	background-attachment: local, local, scroll, scroll;
 	background-position: top left, top right, top left, top right;
 	background-repeat: no-repeat;
@@ -397,6 +403,13 @@ tbody.shadows td {
 	background-size: 30px 100%, 30px 100%, 15px 100%, 15px 100%;
 }
 
+tbody.shadows tr:nth-child(odd) td.active {
+	background-color: hsla(163, 63%, 85%, .3);
+}
+
+tbody.shadows tr:nth-child(even) td.active {
+	background-color: hsla(161, 89%, 89%, .3);
+}
 
 
 /*----------Footer-----------*/
